@@ -1,0 +1,9 @@
+@mixin bordered($size, $color, $radius: 0px, $type: solid) {
+  border: $size $type $color;
+  border-radius: $radius;
+}
+
+// How to use:
+// @include bordered(1px, #000, 16px, dashed);
+// Если 2 последних аргумента $radius и $type не указать, то будут подставлены default значения, а именно border-radius: 0px и border-type: solid, то есть если Вам не нужен
+// border-radius, просто не передавайте аргумент, если не нужен другой стиль, отличный от solid, тоже ничего не указываем.

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <script type="module" src="./read.js"></script>
+  </head>
+
+  <body>
+    <!-- start header -->
+    <header class="header" id="home">
+      <div class="header__container container">
+        <!-- Logo -->
+        <a class="logo" href="/src/index.html"> News </a>
+        <!-- nav menu -->
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="/src/index.html" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="/src/favorite.html" class="nav__link">Favorite</a>
+            </li>
+            <li class="nav__item">
+              <a href="/src/read.html" class="nav__link nav__link--current"
+                >Read</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <!-- search from -->
+        <form class="header-form" action="submit">
+          <label class="label">
+            <input
+              class="header-input"
+              type="search"
+              name="search"
+              placeholder="Search |"
+            />
+            <!-- <svg class="form-icon" width="20" height="19">
+            <use href="/src/images/header-icons.svg#icon-search"></use>
+          </svg> -->
+          </label>
+        </form>
+
+        <!-- switch menu desktop -->
+        <ul class="header-switch-menu-desk list">
+          <li>
+            <button class="btn-light btn" type="button">Light</button>
+          </li>
+
+          <!-- бегунок переключателя для десктопа -->
+          <li>
+            <div class="toggle">
+              <input type="checkbox" class="js-toggle" id="toggle" />
+              <label for="toggle"></label>
+            </div>
+          </li>
+
+          <li>
+            <button class="btn-dark btn" type="button">Dark</button>
+          </li>
+        </ul>
+
+        <!-- switch menu tablet -->
+        <ul class="header-switch-menu-tablet list">
+          <li>
+            <button class="btn-svg-sun btn">
+              <svg class="svg-sun" width="21" height="21">
+                <use href="/src/images/header-icons.svg#icon-sun"></use>
+              </svg>
+            </button>
+          </li>
+
+          <!-- бегунок переключателя для таблетки -->
+          <li>
+            <div class="toggle-t">
+              <input type="checkbox" class="js-toggle-t" id="toggle-t" />
+              <label for="toggle-t"></label>
+            </div>
+          </li>
+
+          <li>
+            <button class="btn-svg-moon btn">
+              <svg class="svg-moon" width="21" height="21">
+                <use href="/src/images/header-icons.svg#icon-moon"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+
+        <!-- switch menu mob -->
+        <ul class="header-switch-menu-mob list">
+          <li class="btn-search-mob">
+            <button class="btn-search" type="button">
+              <svg class="svg-btn-search" width="20" height="20">
+                <use href="/src/images/header-icons.svg#icon-search"></use>
+              </svg>
+            </button>
+          </li>
+          <li>
+            <button
+              class="menu-toggle js-open-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <svg class="menu-toggle__icon" width="24" height="24">
+                <use href="/src/images//icons.svg#icon-menu-burger"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- end header -->
+
+    <include src="./partials/read-accordion.html"></include>
+    <include src="./partials/burger-menu-read.html"></include>
+  </body>
+</html>

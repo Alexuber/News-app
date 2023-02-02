@@ -1,0 +1,77 @@
+.button-box {
+  margin: auto;
+  position: relative;
+  display: inline-block;
+}
+
+.calendar__btn {
+  width: 152px;
+  height: 31px;
+  color: rgba(17, 19, 33, 0.4);
+  background-color: transparent;
+  border: 1px solid #111321;
+  border-radius: 20px;
+  cursor: pointer;
+
+  font-family: 'Manrope';
+  font-size: 12px;
+  line-height: 1.75;
+  letter-spacing: 0.02em;
+
+  transition: border 500ms, color 500ms, background-color 500ms;
+}
+
+.calendar__btn:focus,
+.calendar__btn:hover {
+  color: #fff;
+  background-color: #4440f6;
+  border: #4440f6;
+}
+
+.calendar__btn:hover ~ .calendar__img {
+  fill: #fff;
+}
+
+.calendar__img {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  pointer-events: none;
+  transition: fill 500ms, transform 500ms;
+}
+
+.calendar__img--left {
+  left: 12px;
+  fill: #4440f6;
+}
+
+.calendar__img--right {
+  right: 12px;
+  fill: #a2a2a2;
+}
+
+.dark-theme .calendar__btn {
+  border-color: #f4f4f4;
+  color: rgba(244, 244, 244, 0.4);
+}
+
+.dark-theme .calendar__btn:hover,
+.dark-theme .calendar__btn:focus {
+  color: #fff;
+  border-color: #4440f6;
+}
+
+@include media-min(tablet) {
+  .calendar__btn {
+    width: 168px;
+    font-size: 14px;
+  }
+}
+
+.js-accent ~ .calendar__img {
+  fill: #fff;
+}
+
+.js-accent ~ .calendar__img--right {
+  transform: translate(0, -50%) rotate(180deg);
+}

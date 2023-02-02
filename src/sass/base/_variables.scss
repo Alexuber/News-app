@@ -1,0 +1,20 @@
+$colors: (
+  primary-text: rgba(17, 19, 33, 1),
+  primary-active: rgba(68, 64, 246, 1),
+  second-active: rgba(75, 72, 219, 1),
+  full-white: rgba(255, 255, 255, 1),
+  dark-white: rgba(244, 244, 244, 1),
+  full-black: rgba(0, 0, 0, 1),
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
+
+// How to use:
+// .button {
+//   color: getColor('primary');
+//   background-color: getColor('background');
+// }
+//  Вместо привычной переменной указываем функцию -- getColor('name') -- , где в атрибут 'name' нужно передать имя переменной.
+//  Польза от этого более заметна, если будет больше карт переменных.

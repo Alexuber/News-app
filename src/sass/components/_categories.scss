@@ -1,0 +1,200 @@
+.show-more-btn {
+  width: 112px;
+  height: 31px;
+  color: getColor('primary-active');
+  border: 1px solid getColor('second-active');
+  border-radius: 20px;
+  background-color: getColor('dark-white');
+  font-family: 'Manrope';
+  font-size: 12px;
+  line-height: 1.33;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: auto;
+  cursor: pointer;
+  &:hover {
+    background-color: getColor('primary-active');
+    color: getColor('full-white');
+    transition: border 500ms, color 500ms, background-color 500ms;
+    .open-icon {
+      fill: getColor('full-white');
+    }
+  }
+  @include media-min(tablet) {
+    margin-right: 24px;
+  }
+}
+.categories-menu {
+  visibility: hidden;
+  width: 148px;
+  height: 380px;
+  background-color: getColor('full-white');
+  border-radius: 20px;
+  padding: 14px;
+  position: absolute;
+  z-index: 100;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+  @include media-min(tablet) {
+    width: 168px;
+    padding-top: 14px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+.open-icon {
+  margin-left: 10px;
+  fill: getColor('primary-active');
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.btn-desktop {
+  width: auto;
+  height: 31px;
+  color: getColor('primary-active');
+  border: 1px solid getColor('second-active');
+  border-radius: 20px;
+  background-color: getColor('dark-white');
+  font-family: 'Manrope';
+  font-size: 12px;
+  line-height: 1.33;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: auto;
+  cursor: pointer;
+  padding-left: 20px;
+  padding-right: 20px;
+  &:hover {
+    background-color: getColor('primary-active');
+    color: getColor('full-white');
+    transition: border 500ms, color 500ms, background-color 500ms;
+  }
+}
+.desktop-btn-active {
+  background-color: getColor('primary-active');
+  color: getColor('full-white');
+  .open-icon {
+    transform: rotate(180deg);
+    fill: getColor('full-white');
+    transition: fill 500ms, transform 500ms;
+  }
+}
+.active-underline {
+  text-decoration: underline;
+}
+.thumb {
+  position: relative;
+}
+
+.btn-menu {
+  border: none;
+  background-color: getColor('full-white');
+  color: getColor('primary-active');
+  cursor: pointer;
+  font-family: 'Manrope';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.01em;
+  margin-bottom: 12px;
+  text-align: start;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.date-text {
+  display: none;
+  margin-left: auto;
+  margin-right: 37px;
+  font-family: 'Manrope';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: getColor('primary-text');
+  @include media-min(desktop) {
+    display: block;
+  }
+}
+
+.box {
+  display: flex;
+  margin-bottom: 60px;
+  margin-top: 28px;
+
+  justify-content: space-between;
+
+  @include media-max(mobile) {
+    margin-bottom: 40px;
+  }
+}
+
+.modal {
+  position: relative;
+  margin-left: auto;
+  @include media-min(desktop) {
+    margin-left: 0;
+  }
+}
+
+.categories {
+  display: flex;
+}
+.categories-link-desktop {
+  margin-right: 14px;
+  @include media-min(desktop) {
+    margin-right: 16px;
+  }
+  &:nth-child(-n + 6) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    &:nth-child(-n + 4) {
+      display: block;
+    }
+  }
+  @include media-min(desktop) {
+    &:nth-child(-n + 6) {
+      display: block;
+    }
+  }
+}
+.categories-menu-link {
+  &:first-child {
+    display: none;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    &:nth-child(-n + 5) {
+      display: none;
+    }
+  }
+  @include media-min(desktop) {
+    &:nth-child(-n + 7) {
+      display: none;
+    }
+  }
+}
+.others-btn {
+  display: none;
+  @include media-min(tablet) {
+    display: flex;
+  }
+}
+.category-btn {
+  display: flex;
+  @include media-min(tablet) {
+    display: none;
+  }
+}
+.is-active {
+  background-color: getColor('primary-active');
+  color: getColor('full-white');
+}

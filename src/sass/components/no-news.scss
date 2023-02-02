@@ -1,0 +1,43 @@
+.no-news {
+  padding-bottom: 60px;
+
+  @include media-min(tablet) {
+    padding-bottom: 100px;
+  }
+
+  @include media-min(desktop) {
+    padding-top: 61px;
+    padding-bottom: 225px;
+  }
+}
+
+.no-news__tite {
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 275px;
+
+  @include main-font(700, 20px, 27px, -0.01em);
+  text-align: center;
+
+  color: #111321;
+
+  @include media-min(tablet) {
+    width: 550px;
+    @include main-font(700, 40px, 55px, -0.01em);
+  }
+}
+
+.no-news__img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.is-hidden {
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  z-index: -999;
+  opacity: 1;
+}

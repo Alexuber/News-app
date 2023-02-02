@@ -1,0 +1,7 @@
+@mixin transition($typeOne, $typeTwo: $typeOne) {
+  transition: $typeOne 300ms ease-in-out, $typeTwo 300ms ease-in-out;
+}
+
+// body {
+//   @include transition(background-color, color);
+// }

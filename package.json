@@ -1,0 +1,36 @@
+{
+  "name": "news-app",
+  "version": "2.0.0",
+  "description": "",
+  "homepage": "https://Alexuber.github.io/News-app",
+  "scripts": {
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /News-app/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goitAlexuberacademy/News-app.git"
+  },
+  "keywords": [],
+  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alexuber/News-app/issues"
+  },
+  "dependencies": {
+    "axios": "^1.2.4",
+    "body-scroll-lock": "^4.0.0-beta.0",
+    "modern-normalize": "^1.1.0",
+    "notiflix": "^3.2.6"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.0",
+    "buffer": "^6.0.3",
+    "parcel": "^2.6.0",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-include": "^1.7.4",
+    "process": "^0.11.10",
+    "vanillajs-datepicker": "^1.2.0"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
+}

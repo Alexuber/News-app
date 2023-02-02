@@ -1,0 +1,124 @@
+// бегунок переключателя для десктопа
+.toggle input[type='checkbox'] {
+  display: none;
+}
+
+.toggle label {
+  background-color: #ffffff;
+  border: 0.604701px solid #4b48db;
+  border-radius: 20px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: all ease-in-out 0.3s;
+  width: 40px;
+  height: 20px;
+}
+
+.toggle label::after {
+  background-color: #4b48db;
+  border-radius: 20px;
+  content: '';
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  left: 1.5px;
+  top: 1.5px;
+  transition: all ease-in-out 0.3s;
+  width: 16px;
+  height: 16px;
+}
+
+.toggle input[type='checkbox']:checked ~ label {
+  background-color: #4440f7;
+  border: 1px solid #ffffff;
+}
+
+.toggle input[type='checkbox']:checked ~ label::after {
+  background-color: #ffffff;
+  transform: translateX(19px);
+}
+
+// ********************************************
+
+.toggle-t input[type='checkbox'] {
+  display: none;
+}
+
+.toggle-t label {
+  background-color: #ffffff;
+  border: 0.604701px solid #4b48db;
+  border-radius: 20px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: all ease-in-out 0.3s;
+  width: 40px;
+  height: 20px;
+}
+
+.toggle-t label::after {
+  background-color: #4b48db;
+  border-radius: 20px;
+  content: '';
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  left: 1.5px;
+  top: 1.5px;
+  transition: all ease-in-out 0.3s;
+  width: 16px;
+  height: 16px;
+}
+
+.toggle-t input[type='checkbox']:checked ~ label {
+  background-color: #4440f7;
+  border: 1px solid #ffffff;
+}
+
+.toggle-t input[type='checkbox']:checked ~ label::after {
+  background-color: #ffffff;
+  transform: translateX(19px);
+}
+
+// ********************************************
+
+.toggle-m input[type='checkbox'] {
+  display: none;
+}
+
+.toggle-m label {
+  background-color: #ffffff;
+  border: 0.604701px solid #4b48db;
+  border-radius: 20px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: all ease-in-out 0.3s;
+  width: 40px;
+  height: 20px;
+}
+
+.toggle-m label::after {
+  background-color: #4b48db;
+  border-radius: 20px;
+  content: '';
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  left: 1.5px;
+  top: 1.5px;
+  transition: all ease-in-out 0.3s;
+  width: 16px;
+  height: 16px;
+}
+
+.toggle-m input[type='checkbox']:checked ~ label {
+  background-color: #4440f7;
+  border: 1px solid #ffffff;
+}
+
+.toggle-m input[type='checkbox']:checked ~ label::after {
+  background-color: #ffffff;
+  transform: translateX(19px);
+}

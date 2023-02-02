@@ -1,0 +1,65 @@
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <a class="burger-logo" href="/src/index.html">News</a>
+
+  <button class="menu-toggle js-close-menu">
+    <svg class="menu-toggle__svg-close" width="24" height="24">
+      <use class="close-svg" href="/src/images/header-icons.svg#close-modal"></use>
+    </svg>
+  </button>
+
+  <ul class="mobile-menu list">
+    <li class="mobile-menu-item bgc-active">
+      <svg class="burger-svg" width="32" height="32">
+        <use href="/src/images/header-icons.svg#icon-home"></use>
+      </svg>
+
+      <a class="mobile-menu-link mobile-menu-link--active link" href="/src/index.html">Home</a>
+
+      <svg class="chevron-right" width="24" height="24">
+        <use href="/src/images/header-icons.svg#icon-chevron-right"></use>
+      </svg>
+    </li>
+
+    <li class="mobile-menu-item">
+      <svg class="burger-svg" width="32" height="32">
+        <use href="/src/images/header-icons.svg#icon-heart"></use>
+      </svg>
+
+      <a class="mobile-menu-link link" href="/src/favorite.html">Favorite</a>
+    </li>
+
+    <li class="mobile-menu-item">
+      <svg class="burger-svg" width="32" height="32">
+        <use href="/src/images/header-icons.svg#icon-read"></use>
+      </svg>
+
+      <a class="mobile-menu-link link" href="/src/read.html">Read</a>
+    </li>
+  </ul>
+
+  <ul class="switch-menu list">
+    <li>
+      <button class="btn-svg-sun btn">
+        <svg class="svg-sun" width="21" height="21">
+          <use href="/src/images/header-icons.svg#icon-sun"></use>
+        </svg>
+      </button>
+    </li>
+
+    <!-- бегунок переключателя бургер меню -->
+    <li>
+      <div class="toggle-m">
+        <input type="checkbox" class="js-toggle-m" id="toggle-m" />
+        <label for="toggle-m"></label>
+      </div>
+    </li>
+
+    <li>
+      <button class="btn-svg-moon btn">
+        <svg class="svg-moon" width="21" height="21">
+          <use href="/src/images/header-icons.svg#icon-moon"></use>
+        </svg>
+      </button>
+    </li>
+  </ul>
+</div>

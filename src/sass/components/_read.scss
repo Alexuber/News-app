@@ -1,0 +1,20 @@
+.nav__link {
+  position: relative;
+}
+
+.nav__link--current {
+  color: #111321;
+
+  &::after {
+    content: '';
+
+    /* вынимаем этот элемент из потока */
+    position: absolute;
+    bottom: -2px;
+    left: -5px;
+    display: block;
+    width: 120%;
+    height: 1px;
+    background-color: #4440f7;
+  }
+}
